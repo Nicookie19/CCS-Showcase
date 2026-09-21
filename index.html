@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A visual showcase of research, learning, and community from UIC College of Computer Studies.">
+  <title>CCS Showcase | UIC College of Computer Studies</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bowlby+One+SC&family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="CCS Showcase home">
+      <span class="brand-mark">CCS</span>
+      <span class="brand-copy"><strong>College of Computer Studies</strong><small>University of the Immaculate Conception</small></span>
+    </a>
+    <nav aria-label="Main navigation">
+      <a href="#showcase">Showcase</a>
+      <a href="#about">About CCS</a>
+      <a class="nav-link" href="https://www.facebook.com/uic.ccs" target="_blank" rel="noreferrer">Facebook <span aria-hidden="true">↗</span></a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="eyebrow-dot"></span> A living archive of ideas in motion</p>
+        <h1 id="hero-title">Choose to <em>think</em> forward.</h1>
+        <p class="hero-intro">A visual collection of the people, research, and shared moments shaping the College of Computer Studies at UIC.</p>
+        <a class="button button-dark" href="#showcase">Explore the collection <span aria-hidden="true">↓</span></a>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <div class="art-ring ring-one"></div>
+        <div class="art-ring ring-two"></div>
+        <div class="art-card"><span>01</span><strong>Research<br>meets impact.</strong></div>
+        <div class="art-caption">Davao City<br><span>Philippines</span></div>
+      </div>
+    </section>
+
+    <section class="intro-strip" id="about" aria-label="About this showcase">
+      <p class="section-label">The CCS lens</p>
+      <p class="intro-statement">Where curious minds turn <span>questions</span> into tools, stories, and real-world change.</p>
+      <div class="intro-meta"><span>UIC / CCS</span><span>Est. 1995</span></div>
+    </section>
+
+    <section class="showcase-section" id="showcase" aria-labelledby="showcase-title">
+      <div class="section-heading">
+        <div><p class="section-label">Every frame, right here</p><h2 id="showcase-title">The collection</h2></div>
+        <p class="section-note">24 moments from a community that learns out loud.</p>
+      </div>
+      <div class="gallery" id="gallery"></div>
+    </section>
+
+    <section class="closing" aria-labelledby="closing-title">
+      <p class="section-label">Keep in touch</p>
+      <h2 id="closing-title">More ideas are<br><em>in the making.</em></h2>
+      <a class="button button-light" href="https://www.facebook.com/uic.ccs" target="_blank" rel="noreferrer">Follow CCS on Facebook <span aria-hidden="true">↗</span></a>
+    </section>
+  </main>
+
+  <footer class="site-footer"><span>UIC / College of Computer Studies</span><span>Designed for the next question.</span><span>© <span id="year"></span></span></footer>
+
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer" hidden>
+    <button class="lightbox-close" id="lightbox-close" aria-label="Close image viewer">×</button>
+    <button class="lightbox-arrow lightbox-prev" id="lightbox-prev" aria-label="Previous image">←</button>
+    <figure><img id="lightbox-image" src="" alt=""><figcaption id="lightbox-caption"></figcaption></figure>
+    <button class="lightbox-arrow lightbox-next" id="lightbox-next" aria-label="Next image">→</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
